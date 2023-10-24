@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("ab3.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: linear-gradient(
+        rgba(17, 67, 97, 0.7),
+        rgba(246, 246, 246, 0.651)
+    ), #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    box-shadow: 0px 0px 15px rgba(88, 171, 215, 0.3);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8295aa36;
+}
+.help-button {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #007bff00;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.help-button a {
+    text-decoration: none;
+    color: #000000;
+}
+/* CSS for the login page styles */
+.input-box {
+    margin: 20px 0;
+    position: relative; /* Add this to create a relative positioning context */
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Add a transition effect for border color */
+}
+
+/* Apply a different border color when the input is focused */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF; /* Change to the desired color on focus */
+}
+
+

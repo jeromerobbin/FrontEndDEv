@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Admission Login Page" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="ClientLogo.png" alt="Your Logo" style="height: 100px; width: auto;" />
+        </div>
+        <h1 style="text-align: center; color: #000000; font-size: 23px; padding: 10px;">ADMISSION LOGIN PAGE</h1>
+        <div class="form-group" style="margin-bottom: 5px;">
+            <label>Username</label>
+            <input type="text" id="username" />
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="password" />
+
+        </div>
+        <button id="loginButton" onclick="checkCredentials()">Login</button>
+        <br>
+        <br>
+        <a class="forgot-password-link" href="http://staging.ishinfo.com/SSODLY24/register/ForgotPassword.aspx" target="_blank">Forgot Password?</a>
+    </div>
+
+    <div class="help-button">
+        <a href="tel:788998762"> Contact: 
+            <br>
+            Phone: 044-983722731
+            <br>
+            Email: infotechsoln@gmail.com
+        </a>
+    </div>
+
+    <script>
+        function checkCredentials() {
+            const usernameInput = document.getElementById("username");
+            const passwordInput = document.getElementById("password");
+            const username = usernameInput.value;
+            const password = passwordInput.value;
+
+            const correctUsername = "ishinfo";
+            const correctPassword = "info123";
+
+            if (username === correctUsername && password === correctPassword) {
+                openPopup();
+            } else {
+                alert("Invalid username or password. Please try again.");
+                usernameInput.value = "";
+                passwordInput.value = "";
+            }
+        }
+
+        function openPopup() {
+            const popupURL = "popup.html";
+            const popupWindow = window.open(popupURL, "Popup", "width=600,height=400");
+            popupWindow.focus();
+        }
+    </script>
+</body>
+</html>
